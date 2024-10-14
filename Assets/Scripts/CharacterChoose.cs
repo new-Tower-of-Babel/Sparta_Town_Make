@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterChoose : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Image characterDisplay;
+    public Image changeDisplay1;
+    public Image changeDisplay2;
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeDisplay()
     {
-        
+        characterDisplay.gameObject.SetActive(false);
+        changeDisplay1.gameObject.SetActive(true);
+        changeDisplay2.gameObject.SetActive(true);
     }
 }
